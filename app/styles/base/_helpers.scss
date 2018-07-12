@@ -1,10 +1,10 @@
 // -----------------------------------------------------------------------------
 // This file contains CSS helper classes.
 // -----------------------------------------------------------------------------
-
 /**
  * Clear inner floats
  */
+
 .clearfix::after {
   clear: both;
   content: '';
@@ -17,21 +17,28 @@
  * 2. Center it in the viewport
  * 3. Leave some space on the edges, especially valuable on small screens
  */
+
 .container {
-  max-width: $max-width; /* 1 */
-  margin-left: auto; /* 2 */
-  margin-right: auto; /* 2 */
-  width: 100%; /* 1 */
- }
+  max-width: $max-width;
+  /* 1 */
+  margin-left: auto;
+  /* 2 */
+  margin-right: auto;
+  /* 2 */
+  width: 100%;
+  /* 1 */
+}
 
 /**
  * Hide text while making it readable for screen readers
  * 1. Needed in WebKit-based browsers because of an implementation bug;
  *    See: https://code.google.com/p/chromium/issues/detail?id=457146
  */
+
 .hide-text {
   overflow: hidden;
-  padding: 0; /* 1 */
+  padding: 0;
+  /* 1 */
   text-indent: 101%;
   white-space: nowrap;
 }
@@ -41,6 +48,7 @@
  * Shamelessly borrowed from HTML5Boilerplate:
  * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
  */
+
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -50,4 +58,25 @@
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.u-full-width {
+  width: 100% !important;
+}
+.u-margin-bottom-medium {
+  margin-bottom: 8rem !important;
+}
+.u-margin-bottom-small {
+  margin-bottom: 2rem !important;
+}
+
+.u-margin-bottom-smallest {
+  margin-bottom: 1rem !important;
+}
+
+
+.u-line-break {
+  height: 1px;
+  display: block;
+  background-color: $light-grey;
 }
