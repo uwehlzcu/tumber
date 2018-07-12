@@ -1,0 +1,11 @@
+.c-social-links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  &__icon {
+    color: $mid-grey;
+    &--medium {
+      font-size: 1.8rem;
+    }
+  }
+}

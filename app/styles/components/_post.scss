@@ -1,7 +1,6 @@
 .c-post {
   &__title {
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 1.8rem;
   }
   &__footer {
     height: auto !important;
@@ -9,17 +8,15 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-}
+  }
   &__meta {
     padding: .5rem 0;
   }
-  &__date,
-  &__icon {
-      color: $mid-grey;
+  &__share {
+    width: 8rem;
   }
-  &__icon {
-    margin-left: 1rem;
-    font-size: 1.8rem;
+  &__date {
+    color: $mid-grey;
   }
   &__comments {
     color: $brand-color;
@@ -28,3 +25,5 @@
     font-size: 1.2rem;
   }
 }
+
+
