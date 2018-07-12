@@ -13,10 +13,13 @@
   &__meta {
     padding: .5rem 0;
   }
+  &__date,
+  &__icon {
+      color: $mid-grey;
+  }
   &__icon {
     margin-left: 1rem;
     font-size: 1.8rem;
-    color: $mid-grey;
   }
   &__comments {
     color: $brand-color;
