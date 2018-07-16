@@ -1,16 +1,33 @@
 .c-post {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
   width: 100%;
   @media screen and (min-width: 576px) {
     width: 45%;
   }
+  @media screen and (min-width: 900px) {
+    width: 30%;
+  }
+  &__img {
+    flex: 1 0 auto;
+    @media screen and (min-width: 576px) {
+      flex: 1 0 auto;
+    }
+  }
   &-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    @media screen and (min-width: 576px) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
   }
   &__title {
     font-size: 1.6rem;
     word-wrap: break-word;
+    @media screen and (min-width: 576px) {
+      font-size: 2rem;
+    }
   }
   &__footer {
     height: auto !important;
@@ -19,13 +36,11 @@
     justify-content: space-between;
     align-items: center;
   }
-  &__meta {
-    padding: .5rem 0;
-  }
+
   &__share {
     width: 8rem;
     @media screen and (min-width: 576px) {
-      width: 12rem;
+      width: 10rem;
     }
   }
   &__date {
@@ -36,5 +51,7 @@
   }
   &__meta {
     font-size: 1.2rem;
+    padding: .5rem 0;
+    
   }
 }
