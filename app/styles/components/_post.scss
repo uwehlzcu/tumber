@@ -1,6 +1,16 @@
 .c-post {
+  width: 100%;
+  @media screen and (min-width: 576px) {
+    width: 45%;
+  }
+  &-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
   &__title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    word-wrap: break-word;
   }
   &__footer {
     height: auto !important;
@@ -14,6 +24,9 @@
   }
   &__share {
     width: 8rem;
+    @media screen and (min-width: 576px) {
+      width: 12rem;
+    }
   }
   &__date {
     color: $mid-grey;
@@ -25,5 +38,3 @@
     font-size: 1.2rem;
   }
 }
-
-
